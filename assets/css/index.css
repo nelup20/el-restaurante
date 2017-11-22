@@ -1,0 +1,38 @@
+
+body{
+    margin: 0;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    padding-top: 0;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(79, 233, 27);
+    background-image: url("../images/taco1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navBar{
+    position: absolute;
+    left: 5vw;
+    top: 3vw;
+    display: flex;
+    width: 100vw;
+}
+#restaurantName{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 6vw;
+    margin: 0;
+    flex: 1;
+}
+
+#sombreroIcon{
+    flex: 0.2;
+    width: 10%;
+    height: 10%;
+}
+.nav{
+    flex: 1.8;
+}
