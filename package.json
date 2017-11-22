@@ -1,0 +1,11 @@
+{
+  "name": "elrestaurante.com",
+  "version": "1.0.0",
+  "description": "Mockup of a restaurant site for portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nelu Platonov, platon.nelu@yahoo.com",
+  "license": "ISC"
+}
