@@ -1,6 +1,10 @@
 
+html{
+    height: 100%;
+}
 body{
     margin: 0;
+    height: 100%;
 }
 h2{
     font-family: 'Roboto', sans-serif;
@@ -17,7 +21,7 @@ h2{
 .navBar{
     position: absolute;
     left: 5vw;
-    top: 3vw;
+    top: 6.5vw;
     display: flex;
     width: 100vw;
 }
@@ -43,22 +47,27 @@ h2{
 .nav{
     flex: 1.5;
 }
-.nav i{
+.hamburgerBackground{
     border: 1px solid white;
     padding: 2vw;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     right: 15vw;
+    transition: all 0.3s;
+    top: 10vw;
+}
+.nav i{
+    transition: all 0.3s;
 }
 .navigationLinks{
     border: 1px solid rgba(242, 242, 242, 0.507);
     border-radius: 10%;
-    position: absolute;
-    top: 10vw;
+    position: fixed;
+    top: 20vw;
     opacity: 0;
-    transition: all 0.5s;
     background-color: rgba(242, 242, 242, 0.207);
     right: 4vw;
+    transition: all 0.4s;
 }
 .navigationLinks ul{
    padding-left: 8vw;
@@ -69,4 +78,154 @@ h2{
     color: white;
     text-decoration: none;
     font-size: 3vw;
+}
+.reservationPart{
+    width: 105vw;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+#reservationImg{
+    flex: 1.1;
+    background-image: url("../images/restaurant1.jpg");
+    background-size: cover;
+
+}
+.reservationPart div{
+    flex: 1;
+    text-align: center;
+    color: rgba(158, 158, 158, 0.993);
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+}
+.reservationPart h3{
+    font-family: 'Kaushan Script', cursive;
+    color: rgba(0, 0, 0, 0.733);
+}
+.reservationPart button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    color: rgb(197, 169, 41);
+    border: 1px solid rgba(197, 169, 41, 0.3);
+    background-color: white;
+    border-radius: 0%;
+    padding: 3vw;
+    cursor: pointer;
+    margin-bottom: 2vw;
+}
+.aboutPart{
+    display: flex;
+}
+.aboutPart div{
+    flex: 1;
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(158, 158, 158, 0.993);
+}
+.aboutPart h3{
+    font-family: 'Kaushan Script', cursive;
+    color: rgba(0, 0, 0, 0.733);
+}
+#aboutImg{
+    flex: 1;
+    background-image: url("../images/drink1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.ourSpecialities{
+    background-image: url("../images/ourSpecialities.jpg");
+    background-size: cover;
+    height: 100vw;
+    width: 105vw;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.ourSpecialities h2{
+    flex: 1;    
+}
+.specialities{
+    width: 105vw;
+}
+.specialityItem{
+    display: flex;
+}
+.specialityItem div{
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgba(158, 158, 158, 0.993);
+}
+.specialityItem h3{
+    color: rgba(0, 0, 0, 0.719);
+}
+.specialityItem h4{
+    color: rgb(197, 169, 41);
+}
+.specialityItem p{
+    font-size: 3.5vw;
+}
+#TacoImg{
+    flex: 1;
+    background-image: url("../images/speciality1.jpg");
+    background-size: cover; 
+}
+#BurritoImg{
+    flex: 1;
+    background-image: url("../images/speciality2.jpg");
+    background-size: cover; 
+}
+#NachoImg{
+    flex: 1;
+    background-image: url("../images/speciality3.jpg");
+    background-size: cover; 
+}
+#RandomFoodImg{
+    flex: 1;
+    background-image: url("../images/speciality4.jpg");
+    background-size: cover; 
+}
+.bellowSpecialities{
+    width: 105vw;
+    background-image: url("../images/belowSpecialities.jpg");
+    height: 100vw;
+    background-size: cover;
+}
+.menu{
+    font-family: 'Roboto', sans-serif; 
+    width: 105vw;
+}
+.menu h3{
+    margin: 0 auto;
+    font-family: 'Kaushan Script', cursive;
+    color: rgba(0, 0, 0, 0.533);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.533);
+   width: 14.5vw
+}
+.menu h4{
+    text-align: center;
+    font-size: 3.5vw;
+    color: rgb(197, 169, 41);
+}
+.menuItem{
+    margin-left: 2.5vw;
+}
+.menuItem h5{
+    margin-bottom: 0;
+}
+.itemDescription{
+    margin-left: 1vw;
+    display: flex;
+}
+.itemDescription p{
+    flex: 2.5;
+    font-size: 3.5vw;
+}
+.itemPrice{
+    flex: 1;
+    font-family: 'Kaushan Script', cursive;
+    align-self: center
 }
