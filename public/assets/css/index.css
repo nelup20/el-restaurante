@@ -229,3 +229,46 @@ h2{
     font-family: 'Kaushan Script', cursive;
     align-self: center
 }
+@media (min-width: 768px){
+    .navigationLinks{
+        border: 1px solid rgba(242, 242, 242, 0.507);
+        border-radius: 10%;
+        position: fixed;
+        top: 21.2vw;
+        opacity: 0;
+        background-color: rgba(242, 242, 242, 0.207);
+        right: 4vw;
+        transition: all 0.4s;
+    }
+    .hamburgerBackground{
+        border: 1px solid white;
+        padding: 3vw;
+        border-radius: 50%;
+        position: fixed;
+        right: 15vw;
+        transition: all 0.3s;
+        top: 10vw;
+    }
+    .nav i{
+        font-size: 5vw;
+        transition: all 0.3s;
+    }
+    .ourSpecialities h2{
+        font-size: 7vw;   
+    }
+    .specialityItem h4{
+        font-size: 3vw;
+    }
+    .specialityItem h3{
+        font-size: 4vw;
+    }
+    .menu h3{
+        font-size: 6vw;
+    }
+    .menuItem h5{
+        font-size: 4vw;
+    }
+    .itemPrice{
+        font-size: 5vw;
+    }
+}
