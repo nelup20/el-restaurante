@@ -374,10 +374,14 @@ h2{
     .reservationPart{
         width: 70vw;
         margin: 0 auto;
+        opacity: 0;
+        transition: all 1s;
     }
     .aboutPart{
         width: 70vw;
         margin: 0 auto;
+        opacity: 0;
+        transition: all 1s;
     }
     #reservationImg{
         flex: 1.4;
@@ -456,6 +460,8 @@ h2{
         left: 20vw;
         background: white;
         top: 262vw;
+        opacity: 0;
+        transition: all 1s;
         
     }
     #lastTwoSpecialities{
@@ -465,6 +471,8 @@ h2{
         background: white;
         left: 20vw;
         width: 60vw;
+        opacity: 0;
+        transition: all 1s;
     }
     #prelastSpecialityItem{
         flex: 0.913;
