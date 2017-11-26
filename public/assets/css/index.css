@@ -484,6 +484,9 @@ h2{
     .menu{
         width: 100vw;
     }
+    .navBar{
+        width: 95vw;
+    }
     
     
 }
