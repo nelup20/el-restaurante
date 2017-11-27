@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto" rel="stylesheet">
+    <script src="https://use.fontawesome.com/f3341d973d.js"></script>
+    <title>El Restaurante</title>
+    <link rel="stylesheet" href="./assets/css/shop.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navBar">
+    <a href="/" id="logoLink"><h1 id="restaurantName">El Restaurante</h1>
+    <img src="./assets/images/logo.png" alt="" id="sombreroIcon"></a>
+    <div class="nav">
+        <span class="hamburgerBackground"><i class="fa fa-bars" aria-hidden="true"></i></span> 
+        <div class="navigationLinks">
+            <ul>
+                <li id="shopLink"><a href="/shop">SHOP</a></li>
+                <li><a href="#">RECIPES</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>       
+    </div>
+</div>
+</div>
+<div class="shopMenu">
+    <div class="shopRow">
+        <div class="shopItem">
+            <div class="itemPrice"> $0.99 </div>
+            <div id="flagImg"></div>
+            <div class="itemButtons">
+                <i class="fa fa-caret-left" aria-hidden="true" id="leftFlag"></i>
+                <input type="number" min="0" max="25" name="quantity" id="inputFlag">
+                <i class="fa fa-caret-right" aria-hidden="true" id="rightFlag"></i>
+                <a href="/buy"><button class="buyBtn">BUY</button></a>               
+            </div>
+        </div>
+        <div class="shopItem">
+                <div class="itemPrice"> $3.00 </div>
+                <div id="mugImg"></div>
+                <div class="itemButtons">
+                    <i class="fa fa-caret-left" aria-hidden="true" id="leftMug"></i>
+                    <input type="number" min="0" max="25" name="quantity" id="inputMug">
+                    <i class="fa fa-caret-right" aria-hidden="true" id="rightMug"></i>
+                    <a href="/buy"><button class="buyBtn">BUY</button></a>                
+                </div>
+            </div>
+    </div>
+</div>
+</body>
+<script src="./assets/js/shop.js"></script>
+</html>
