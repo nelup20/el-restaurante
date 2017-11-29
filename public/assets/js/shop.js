@@ -3,12 +3,9 @@ var hamburgerIconBackground = document.querySelector(".hamburgerBackground");
 var navLinks = document.querySelector(".navigationLinks");
 var navOpacity = 0;
 var iconBackgroundColor = "rgba(255,255,255,0.2)";
-var leftFlag = document.querySelector("#leftFlag");
-var rightFlag = document.querySelector("#rightFlag");
 var inputFlag = document.querySelector("#inputFlag");
-var leftMug = document.querySelector("#leftMug");
-var rightMug = document.querySelector("#rightMug");
 var inputMug = document.querySelector("#inputMug");
+var btnFlag = document.querySelector("#flagbuyBtn");
 
 function showMenu(){
     navOpacity === 0 ? navOpacity = 1 : navOpacity = 0;
@@ -18,32 +15,16 @@ function showMenu(){
     navLinks.style.opacity = navOpacity;
 };
 
-function addAmount(input){
-    input.value >= 25 ? input.value = 25 : input.value++;
-    if(input.value < 0){
-        input.value = 0;
+
+inputFlag.addEventListener("keyup", function(){
+    if(inputFlag.value > 25){
+        inputFlag.value = 25;
+    };
+    if(inputFlag.value < 0){
+        inputFlag.value = 0;
     }
-};
-function subtractAmount(input){
-    input.value <= 0 ? input.value = 0 : input.value--;
-    if(input.value > 25){
-        input.value = 25
-    }
-};
-
-leftFlag.addEventListener("click", function(){
-    subtractAmount(inputFlag);
+    btnFlag.textContent = "$" + (inputFlag.value * 0.99).toFixed(2);
 });
 
-rightFlag.addEventListener("click", function(){
-    addAmount(inputFlag);
-});
-
-leftMug.addEventListener("click", function(){
-    subtractAmount(inputMug);
-});
-rightMug.addEventListener("click", function(){
-    addAmount(inputMug);
-});
 
 hamburgerIcon.addEventListener("click", showMenu);
