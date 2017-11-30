@@ -111,22 +111,13 @@ h2{
 #shopLink{
     text-decoration: underline;
 }
-#flagImg{
-    background-image: url("../images/souvenir1.jpg");
+.itemImg{
     width: 50vw;
     height: 40vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 7%;
-}
-#mugImg{
-    background-image: url("../images/souvenir2.jpg");
-    width: 50vw;
-    height: 40vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .shopItem{
     border: 1px solid rgba(0, 0, 0, 0.192);
@@ -153,8 +144,7 @@ h2{
     flex: 1;
 }
 .itemButtons input{
-    padding: 2vw;
-    margin: 1vw;
+    padding: 1.8vw;
     margin-left: 2.5vw;
     padding-left: 0;
     border-radius: 10%;
@@ -166,7 +156,9 @@ h2{
     color: white;
     background-color: #5C9A4F;
     padding: 2vw;
-    margin-left: 5vw;
+    margin-left: 4vw;
+    border: none;
+    border-radius: 10%;
 }
 @media (min-width: 768px){
     .navigationLinks{
