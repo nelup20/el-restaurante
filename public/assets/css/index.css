@@ -323,7 +323,6 @@ h2{
         border: none;
         border-radius: 10%;
         position: absolute;
-        top: 20vw;
         opacity: 1;
         background-color: rgba(242, 242, 242, 0);
         right: 1vw;
@@ -547,5 +546,63 @@ h2{
         top: 262.1vw;
         left: 20vw;
         width: 60vw;
+    }
+}
+@media (min-width: 1920px){
+    .navigationLinks{
+        top: 0.5vw;
+        margin-right: 0
+    }
+    .navigationLinks a{
+        font-size: 1.3vw;
+    }
+    #restaurantName{
+        font-size: 2.2vw;
+    }
+    
+    #sombreroIcon{
+       left: 7.5vw;
+        width: 3.5%;
+        top: 3vw;
+    }
+    .restaurantNameHeader h1{
+        font-size: 4.5vw;
+        left: 35vw;
+    }
+    .restaurantNameHeader h3{
+        font-size: 3.5vw;
+        top: 65%;
+        left: 30vw;
+    }
+    .reservationPart{
+        top: 92.1vw;
+    }
+    .aboutPart{
+       top: 117vw;
+    }
+    .reservAndAbout{
+        width: 100vw;
+        height: 35vw
+    }
+    .reservationPart div{
+        font-size: 1.3vw
+    }
+    .aboutPart div{
+        font-size: 1.4vw
+    }
+    #firstTwoSpecialities{
+        left: 20vw;
+        top: 230vw;
+        
+    }
+    #lastTwoSpecialities{
+        top: 242.25vw;
+        left: 20vw;
+    }
+    .specialities{
+        height: 18.5vw;
+    }
+    .itemPrice{
+        margin-left: 0.4vw
     }
 }

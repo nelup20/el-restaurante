@@ -18,11 +18,19 @@ function showMenu(){
 
 function revealReservation(e){
     setTimeout(function(){
-        if(window.pageYOffset >= 860){
+        if(window.innerHeight < 900 && window.pageYOffset >= 860){
             reservePart.style.opacity = 1;
             aboutPart.style.opacity = 1;
         };
-        if(window.pageYOffset >= 2800){
+        if(window.innerHeight < 900 && window.pageYOffset >= 2800){
+            firstTwoSpecialities.style.opacity = 1;
+            lastTwoSpecialities.style.opacity = 1;
+        };
+        if(window.innerHeight > 900 && window.pageYOffset >= 900){
+            reservePart.style.opacity = 1;
+            aboutPart.style.opacity = 1;
+        };
+        if(window.innerHeight > 900 && window.pageYOffset >= 3500){
             firstTwoSpecialities.style.opacity = 1;
             lastTwoSpecialities.style.opacity = 1;
         }
