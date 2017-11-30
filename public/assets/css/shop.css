@@ -248,10 +248,47 @@ h2{
     .header{
         padding-top: 0;
         width: 100vw;
-        height: 200vh;
+        height: 190vh;
         color: white;
         background-image: url("../images/shop.jpg");
         background-size: auto;
         background-repeat: no-repeat;
+    }
+    .shopRow{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .itemImg{
+        width: 30vw;
+        height: 25vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 8%;
+    }
+    .shopItem{
+        border: 1px solid rgba(0, 0, 0, 0.192);
+        border-radius: 7%;
+        width: 30%;
+        position: block;
+        margin: 0 auto;
+        margin-top: 10vw;
+        margin-left: 10vw;
+        height: 30vw;
+        border-bottom-left-radius: 4%;
+        border-bottom-right-radius: 4%;
+    }
+    
+    .itemButtons * {
+        flex: 1;
+    }
+    .itemButtons input{
+        font-size: 2vw;
+        padding: 1.1vw
+    
+    }
+    .itemButtons button{
+        padding: 1.1vw;
+        font-size: 2vw;
     }
 }
