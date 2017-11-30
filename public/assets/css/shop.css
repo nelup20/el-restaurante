@@ -155,6 +155,7 @@ h2{
 
 }
 .itemButtons button{
+    font-family: 'Roboto', sans-serif;
     color: white;
     background-color: #5C9A4F;
     padding: 2vw;
