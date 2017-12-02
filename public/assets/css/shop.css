@@ -103,7 +103,7 @@ h2{
     font-size: 3vw;
 }
 .shopMenu{
-    height: 250vh;
+    height: 290vh;
     width: 100vw;
     background-color: #f2f2f2;
     display: inline-block
@@ -165,27 +165,41 @@ h2{
 }
 @media (min-width: 768px){
     .navigationLinks{
-        border: 1px solid rgba(242, 242, 242, 0.507);
         border-radius: 10%;
-        position: fixed;
         top: 21.2vw;
         opacity: 0;
-        background-color: rgba(242, 242, 242, 0.207);
         right: 4vw;
-        transition: all 0.4s;
     }
     .hamburgerBackground{
-        border: 1px solid white;
         padding: 3vw;
-        border-radius: 50%;
-        position: fixed;
         right: 15vw;
-        transition: all 0.3s;
         top: 10vw;
     }
     .nav i{
         font-size: 5vw;
         transition: all 0.3s;
+    }
+    .shopMenu{
+        height: 330vh
+    }
+    .itemButtons input{
+        padding: 2vw;
+        margin-left: 2.5vw;
+        padding-left: 0;
+        border-radius: 10%;
+        text-align: center;
+        border: 0.5px solid rgba(128, 128, 128, 0.192);
+        font-size: 4vw
+    }
+    .itemButtons button{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        background-color: #5C9A4F;
+        padding: 2.8vw;
+        margin-left: 3vw;
+        border: none;
+        border-radius: 10%;
+        font-size: 3.2vw
     }
 }
 @media (min-width: 1280px){
@@ -290,5 +304,8 @@ h2{
     .itemButtons button{
         padding: 1.1vw;
         font-size: 2vw;
+    }
+    .shopMenu{
+        height: 300vh
     }
 }
