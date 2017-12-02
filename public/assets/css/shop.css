@@ -1,17 +1,4 @@
-html{
-    height: 100%;
-}
-body{
-    margin: 0;
-    height: 100%;
-}
-h2{
-    font-family: 'Roboto', sans-serif;
-}
-#logoLink{
-    text-decoration: none;
-    color: white;
-}
+
 .header{
     padding-top: 0;
     width: 100vw;
@@ -20,96 +7,13 @@ h2{
     background-image: url("../images/shop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-   
     background-position: 40% 0%
-}
-.navBar{
-    position: absolute;
-    left: 5vw;
-    top: 6.5vw;
-    display: flex;
-    width: 95vw;
-}
-#restaurantName{
-    font-family: 'Kaushan Script', cursive;
-    font-size: 6vw;
-    margin: 0;
-    flex: 1.5;
-    position: relative;
-    left: 12vw;
-    text-shadow: 1px 1px 1px black;
-    text-decoration: none;
-    color: white;
-}
-.restaurantNameHeader h1{
-    font-family: 'Kaushan Script', cursive;
-    font-size: 10vw;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 18vw;
-    text-shadow: 1px 1px 1px black;
-}
-.restaurantNameHeader h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 6vw;
-    top: 55%;
-    left: 16vw;
-    text-shadow: 1px 1px 1px black;
-    position: absolute;
-}
-#sombreroIcon{
-    position: absolute;
-   left: 26.5vw;
-    width: 10%;
-    top: 7.5vw;
-    height: 100%;
-    border: 1px solid white;
-    border-radius: 50%
-}
-.nav{
-    flex: 1.5;
-}
-.hamburgerBackground{
-    border: 1px solid white;
-    padding: 2vw;
-    border-radius: 50%;
-    position: fixed;
-    right: 15vw;
-    transition: all 0.3s;
-    top: 10vw;
-}
-.nav i{
-    transition: all 0.3s;
-}
-.navigationLinks{
-    border: 1px solid rgba(242, 242, 242, 0.507);
-    border-radius: 10%;
-    position: fixed;
-    top: 20vw;
-    opacity: 0;
-    background-color: rgba(242, 242, 242, 0.207);
-    right: 4vw;
-    transition: all 0.4s;
-}
-.navigationLinks ul{
-   padding-left: 8vw;
-   padding-right: 10vw;
-}
-.navigationLinks a{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-decoration: none;
-    font-size: 3vw;
 }
 .shopMenu{
     height: 290vh;
     width: 100vw;
     background-color: #f2f2f2;
     display: inline-block
-}
-#shopLink{
-    text-decoration: underline;
 }
 .itemImg{
     width: 50vw;
@@ -164,21 +68,6 @@ h2{
     border-radius: 10%;
 }
 @media (min-width: 768px){
-    .navigationLinks{
-        border-radius: 10%;
-        top: 21.2vw;
-        opacity: 0;
-        right: 4vw;
-    }
-    .hamburgerBackground{
-        padding: 3vw;
-        right: 15vw;
-        top: 10vw;
-    }
-    .nav i{
-        font-size: 5vw;
-        transition: all 0.3s;
-    }
     .shopMenu{
         height: 330vh
     }
@@ -202,63 +91,7 @@ h2{
         font-size: 3.2vw
     }
 }
-@media (min-width: 1280px){
-    
-    #restaurantName{
-        font-family: 'Kaushan Script', cursive;
-        font-size: 3vw;
-        margin: 0;
-        flex: 1.5;
-        position: relative;
-        left: 2vw;
-        text-shadow: 1px 1px 1px black;
-    }
-    
-    #sombreroIcon{
-        position: absolute;
-       left: 8.5vw;
-        width: 5%;
-        top: 4.5vw;
-        height: 100%;
-        border: 1px solid white;
-        border-radius: 50%
-    }
-    .nav{
-        flex: 1.5;
-    }
-    .hamburgerBackground{
-        display: none;
-    }
-    .nav i{
-        transition: all 0.3s;
-    }
-    .navigationLinks{
-        border: none;
-        border-radius: 10%;
-        position: absolute;
-        top: 20vw;
-        opacity: 1;
-        background-color: rgba(242, 242, 242, 0);
-        right: 1vw;
-        transition: all 0.4s;
-        top: 0vw;
-    }
-    .navigationLinks ul{
-       padding-left: 8vw;
-       padding-right: 10vw;
-       display: flex;
-       list-style: none;
-    }
-    .navigationLinks a{
-        flex: 1;
-        font-family: 'Roboto', sans-serif;
-        color: white;
-        text-decoration: none;
-        font-size: 2vw;
-        margin-right: 3vw;
-        
-    }
-    
+@media (min-width: 1280px){  
     .header{
         padding-top: 0;
         width: 100vw;

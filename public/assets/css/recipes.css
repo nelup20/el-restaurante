@@ -1,0 +1,9 @@
+.header{
+    padding-top: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-image: url("../images/recipes1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
