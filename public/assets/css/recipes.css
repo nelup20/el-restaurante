@@ -7,3 +7,41 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.recipesTitleHeader h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 10vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 35vw;
+    text-shadow: 1px 1px 1px black;
+}
+
+#sendBtn{
+    border: 1px solid rgb(197, 169, 41);
+    background-color: rgb(243, 207, 44);
+    color: white; 
+    height: 10vw
+}
+.divForm{
+    height: 35vh;
+}
+.divForm form{
+    display: flex;
+    margin-left: 8%;
+}
+.divForm form input{
+    border: 0.5px solid rgba(128, 128, 128, 0.562);
+    border-radius: 4px;
+    text-align: center;
+    height: 9vw;
+    margin-right: 3vw;
+    width: 50vw
+
+}
+.recipeHeader{
+    margin: 25vw auto 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.514)
+}
