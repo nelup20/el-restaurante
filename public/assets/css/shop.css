@@ -53,7 +53,7 @@
     padding: 1.8vw;
     margin-left: 2.5vw;
     padding-left: 0;
-    border-radius: 10%;
+    border-radius: 5px;
     text-align: center;
     border: 0.5px solid rgba(128, 128, 128, 0.192);
 
@@ -65,7 +65,7 @@
     padding: 2vw;
     margin-left: 3vw;
     border: none;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 @media (min-width: 768px){
     .shopMenu{
@@ -75,7 +75,7 @@
         padding: 2vw;
         margin-left: 2.5vw;
         padding-left: 0;
-        border-radius: 10%;
+        border-radius: 9px;
         text-align: center;
         border: 0.5px solid rgba(128, 128, 128, 0.192);
         font-size: 4vw
@@ -87,7 +87,7 @@
         padding: 2.8vw;
         margin-left: 3vw;
         border: none;
-        border-radius: 10%;
+        border-radius: 9px;
         font-size: 3.2vw
     }
 }
