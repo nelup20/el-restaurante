@@ -1,0 +1,174 @@
+.header{
+    padding-top: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-image: url("../images/about1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.aboutTitleHeader h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 10vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 40vw;
+    text-shadow: 1px 1px 1px black;
+}
+.aboutSection{
+    font-family: "Roboto", sans-serif
+}
+.aboutPair{
+    display: flex;
+    width: 100vw;
+    height: 40vh;   
+    text-align: center;
+    flex-wrap: wrap;
+}
+#crew1{
+    background-image: url("../images/crew1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+#about1{
+    margin-top: 4vw;
+    flex: 1;
+}
+#about2{
+    flex: 1;
+    margin-top: 4vw;
+}
+#crew2{
+    background-image: url("../images/crew2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    background-position-x: -10vw;
+}
+
+#crew3{
+    background-image: url("../images/crew3.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 50vh    
+}
+#about3{
+    text-align: center;
+    margin-top: 4vw;
+    font-family: "Roboto", sans-serif;
+}
+.aboutText{
+    font-size: 3.3vw;
+    font-family: "Roboto", sans-serif;
+    margin: 2vw 2vw;
+}
+@media (min-width: 768px){
+    .aboutPair div{
+        font-size: 3vw;
+    }
+    .aboutPair span{
+        font-size: 4.5vw;
+    }
+    #about3 div{
+        font-size: 3vw;
+    }
+    #about3 span{
+        font-size: 4.5vw;
+        
+    }
+}
+@media (min-width: 1280px){
+    .header{
+        height: 120vh;
+    }
+    .aboutPair{
+        height: 70vh;   
+    }
+    .aboutPair{
+        display: flex;
+        width: 100vw;
+        height: 70vh;   
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .aboutPair div{
+        font-size: 2vw;
+    }
+    .aboutPair span{
+        font-size: 3.5vw;
+    }
+    #about3 div{
+        font-size: 2vw;
+    }
+    #about3 span{
+        font-size: 3.5vw;
+        
+    }
+    #crew3{
+        height: 100vh;
+    }
+    .aboutTitleHeader h1{
+        left: 35vw;
+    }
+    #crew1{
+        transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transition: all 1s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+    }
+    #crew2{
+        transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transition: all 1s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+    }
+    #crew3{
+        opacity: 0;
+        transition: all 1s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+    }
+}
+@media  (min-width: 1440px) {
+    .aboutPair div{
+        font-size: 1.5vw;
+    }
+    .aboutPair span{
+        font-size: 2.5vw;
+    }
+    #about3 div{
+        font-size: 1.5vw;
+    }
+    #about3 span{
+        font-size: 2.5vw;
+        
+    }
+    #crew1{
+        flex: 1.2
+    }
+    #crew2{
+        flex: 1.25;
+        
+    }
+    .header{
+        height: 120vh
+    }
+}

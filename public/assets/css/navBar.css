@@ -49,10 +49,16 @@ h2{
     position: fixed;
     right: 15vw;
     transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     top: 10vw;
 }
 .nav i{
     transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }
 .navigationLinks{
     border: 1px solid rgba(242, 242, 242, 0.507);
@@ -63,6 +69,9 @@ h2{
     background-color: rgba(242, 242, 242, 0.207);
     right: 4vw;
     transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
 }
 .navigationLinks ul{
    padding-left: 8vw;
@@ -92,6 +101,9 @@ h2{
     .nav i{
         font-size: 5vw;
         transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
     }
 }
 @media (min-width: 1280px){
@@ -123,6 +135,9 @@ h2{
     }
     .nav i{
         transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
     }
     .navigationLinks{
         border: none;
@@ -133,6 +148,9 @@ h2{
         background-color: rgba(242, 242, 242, 0);
         right: 1vw;
         transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
         top: 0vw;
     }
     .navigationLinks ul{

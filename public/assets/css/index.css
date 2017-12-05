@@ -232,12 +232,18 @@
         margin: 0 auto;
         opacity: 0;
         transition: all 1s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
     }
     .aboutPart{
         width: 70vw;
         margin: 0 auto;
         opacity: 0;
         transition: all 1s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
     }
     #reservationImg{
         flex: 1.4;
@@ -318,6 +324,9 @@
         top: 262vw;
         opacity: 0;
         transition: all 1s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
         
     }
     #lastTwoSpecialities{
@@ -329,6 +338,9 @@
         width: 60vw;
         opacity: 0;
         transition: all 1s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
     }
     #prelastSpecialityItem{
         flex: 0.913;
