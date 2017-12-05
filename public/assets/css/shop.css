@@ -35,24 +35,20 @@
     border-bottom-right-radius: 4%;
 }
 
-.itemButtons{
+.itemButtons form{
     display: flex;
     justify-content: center;
     align-items: center;
    
 }
-.itemPrice{
-    text-align: center;
-    font-family: 'Kaushan Script', cursive;
-    color: rgba(0, 0, 0, 0.589);
-}
-.itemButtons * {
+
+.itemButtons form * {
     flex: 1;
 }
 .itemButtons input{
-    padding: 1.8vw;
-    margin-left: 2.5vw;
-    padding-left: 0;
+    padding: 1.2vh;
+    margin-left: 0.5vw;
+    padding-left: 2vw;
     border-radius: 5px;
     text-align: center;
     border: 0.5px solid rgba(128, 128, 128, 0.192);
@@ -62,10 +58,12 @@
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: #5C9A4F;
-    padding: 2vw;
+    padding: 1.2vh;
     margin-left: 3vw;
+    margin-right: 0.5vw;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 @media (min-width: 768px){
     .shopMenu{
@@ -73,8 +71,7 @@
     }
     .itemButtons input{
         padding: 2vw;
-        margin-left: 2.5vw;
-        padding-left: 0;
+        padding-left: 2vw;
         border-radius: 9px;
         text-align: center;
         border: 0.5px solid rgba(128, 128, 128, 0.192);
@@ -84,11 +81,18 @@
         font-family: 'Roboto', sans-serif;
         color: white;
         background-color: #5C9A4F;
-        padding: 2.8vw;
-        margin-left: 3vw;
+        padding: 2.8vw;      
         border: none;
         border-radius: 9px;
         font-size: 3.2vw
+    }
+    @-moz-document url-prefix(){
+        .itemButtons form{
+            display: inline;
+        }
+        .itemButtons input{
+            width: 8vw;
+        }
     }
 }
 @media (min-width: 1280px){  
@@ -125,10 +129,6 @@
         border-bottom-left-radius: 4%;
         border-bottom-right-radius: 4%;
     }
-    
-    .itemButtons * {
-        flex: 1;
-    }
     .itemButtons input{
         font-size: 2vw;
         padding: 1.1vw
@@ -140,5 +140,55 @@
     }
     .shopMenu{
         height: 300vh
+    }
+    @-moz-document url-prefix(){
+        .itemButtons form{
+            display: inline;
+        }
+        .itemButtons input{
+            width: 8vw;
+        }
+    }
+}
+@media (min-width: 1600px){
+    .header{
+        height: 161.5vh;
+    }
+    .itemImg{
+        width: 20vw;
+        height: 15vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 8%;
+    }
+    .shopItem{
+        border-radius: 7%;
+        width: 20%;
+        margin-left: 6vw;
+        margin-right: 7vw;
+        height: 18.7vw;
+    }
+    .itemButtons input{
+        font-size: 1.5vw;
+        padding: 0.8vw;
+        margin-left: 1vw;
+    
+    }
+    .itemButtons button{
+        padding: 0.8vw;
+        font-size: 1.5vw;
+        margin-left: 1vw;
+    }
+    .shopMenu{
+        height: 180vh
+    }
+    @-moz-document url-prefix(){
+        .itemButtons form{
+            display: inline;
+        }
+        .itemButtons input{
+            width: 8vw;
+        }
     }
 }
