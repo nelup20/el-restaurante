@@ -58,6 +58,11 @@ app.post("/recipes", function(req, res){
 
 
 
+app.use(function(req, res){
+    res.status(404);
+    res.redirect("back");
+});
+
 app.listen(process.env.PORT || 3000, function(){
     console.log("SERVER STARTED ON PORT 3000")
 });
