@@ -1,0 +1,106 @@
+.header{
+    padding-top: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-image: url("../images/news1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.newsTitleHeader h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 10vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 40vw;
+    text-shadow: 1px 1px 1px black;
+}
+.newsSection{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.newsArticle{
+    margin: 0 auto;
+}
+.newsArticle a{
+    height: 30vh;
+    width: 40vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 5vh auto;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+.articleTitle{
+    margin-top: 16vh;
+    margin-left: 2vw;
+    color: rgb(5, 5, 206);
+    font-size: 4vw;
+}
+.articleSource{
+    margin-top: 1vh;
+    margin-left: 2vw;
+    color: rgb(34, 165, 16)
+}
+@media (min-width: 768px){
+    .articleTitle{
+        margin-top: 18vh;
+        font-size: 3vw;
+    }
+    .articleSource{
+        font-size: 3.5vw
+    }
+}
+@media (min-width: 1280px){
+
+    .newsTitleHeader h1{
+        left: 37vw;
+    }
+    .newsArticle a{
+        height: 40vh;
+        width: 25vw;
+        border-radius: 8px;
+    }
+    .articleTitle{
+        margin-top: 25vh;
+        font-size: 1.7vw;
+    }
+    .articleSource{
+        font-size: 2vw
+    }
+}
+@media (min-width: 1340px) and (max-width: 1375px){
+    .newsArticle a{
+        height: 50vh;
+    }
+    .articleTitle{
+        margin-top: 30vh;
+    }
+}
+@media (min-width: 1920px){
+    .header{
+        height: 110vh;
+    }
+    .newsArticle a{
+        height: 40vh;
+        width: 20vw;
+        border-radius: 8px;
+    }
+    .articleTitle{
+        margin-top: 25vh;
+        font-size: 1.4vw;
+    }
+    .articleSource{
+        font-size: 1.8vw
+    }
+    .newsArticle{
+        margin-left: 9.5vw;
+        margin-right: 0.1vw
+    }
+}

@@ -395,15 +395,26 @@
     }
     
 }
+@media (min-width: 1340px){
+    .reservationPart{
+       top: 90vw;
+    }
+    .aboutPart{
+        top: 117.1vw;
+    }
+    #firstTwoSpecialities{
+        top: 234vw;
+        
+    }
+    #lastTwoSpecialities{
+        top: 246.1vw;
+    }
+}
 @media (min-width: 1440px){
     .reservationPart{
-        position: absolute;
-       left: 15vw;
        top: 108vw;
     }
     .aboutPart{
-        position: absolute;
-        left: 15vw;
         top: 134.5vw;
     }
     #firstTwoSpecialities{
@@ -412,8 +423,6 @@
     }
     #lastTwoSpecialities{
         top: 262.1vw;
-        left: 20vw;
-        width: 60vw;
     }
 }
 @media (min-width: 1920px){

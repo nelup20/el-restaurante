@@ -147,6 +147,14 @@
         -o-transition: all 1s;
     }
 }
+@media (min-width: 1340px) and (max-width: 1375px){
+    #about1{
+        flex: 0.815;
+    }
+    #about2{
+        flex: 0.82;
+    }
+}
 @media  (min-width: 1440px) {
     .aboutPair div{
         font-size: 1.5vw;
