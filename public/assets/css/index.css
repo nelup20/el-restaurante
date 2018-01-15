@@ -204,18 +204,19 @@
     .header{
         padding-top: 0;
         width: 100vw;
-        height: 200vh;
+        height: 800px;
         color: white;
         background-image: url("../images/taco1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position-y: -1250px
     }
     .restaurantNameHeader h1{
         font-family: 'Kaushan Script', cursive;
         font-size: 10vw;
         margin: 0;
         position: absolute;
-        top: 60%;
+        top: 35%;
         left: 18vw;
         text-shadow: 1px 1px 1px black;
     }
@@ -432,7 +433,7 @@
     }
     .restaurantNameHeader h3{
         font-size: 3.5vw;
-        top: 65%;
+        top: 45%;
         left: 30vw;
     }
     .reservationPart{
