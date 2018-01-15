@@ -322,7 +322,7 @@
         position: absolute;
         left: 20vw;
         background: white;
-        top: 262vw;
+        top: 155vw;
         opacity: 0;
         transition: all 1s;
         -moz-transition: all 1s;
@@ -333,7 +333,7 @@
     #lastTwoSpecialities{
         display: flex;
         position: absolute;
-        top: 274.1vw;
+        top: 167vw;
         background: white;
         left: 20vw;
         width: 60vw;
