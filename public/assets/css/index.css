@@ -291,10 +291,13 @@
     }
     #reservationAndAboutPart{
         background: #f2f2f2;
-        height: 42vw;
+        height: 47vw;
     }
     .ourSpecialities{
         width: 100vw;
+        height: 800px;
+        background-attachment: fixed;
+    
     }
     .ourSpecialities h2{
         font-size: 4vw;
@@ -354,6 +357,8 @@
     }
     .bellowSpecialities{
         width: 100vw;
+        height: 700px;
+        background-attachment: fixed;
     }
     .menu{
         width: 80vw;
