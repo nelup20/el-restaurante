@@ -204,28 +204,28 @@
     .header{
         padding-top: 0;
         width: 100vw;
-        height: 800px;
+        height: 650px;
         color: white;
         background-image: url("../images/taco1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-y: -1250px;
+        background-position-y: -750px;
     }
     
     .restaurantNameHeader h1{
         font-family: 'Kaushan Script', cursive;
-        font-size: 10vw;
+        font-size: 50px;
         margin: 0;
         position: absolute;
         top: 35%;
-        left: 18vw;
+        left: 40vw;
         text-shadow: 1px 1px 1px black;
     }
     .restaurantNameHeader h3{
         font-family: 'Roboto', sans-serif;
-        font-size: 6vw;
-        top: 70%;
-        left: 16vw;
+        font-size: 35px;
+        top: 42%;
+        left: 36.5vw;
         text-shadow: 1px 1px 1px black;
         position: absolute;
     }
@@ -237,6 +237,9 @@
         -moz-transition: all 1s;
         -webkit-transition: all 1s;
         -o-transition: all 1s;
+        position: absolute;
+       left: 15vw;
+       top: 48vw;
     }
     .aboutPart{
         width: 70vw;
@@ -246,6 +249,9 @@
         -moz-transition: all 1s;
         -webkit-transition: all 1s;
         -o-transition: all 1s;
+        position: absolute;
+        left: 15vw;
+        top: 74.5vw;
     }
     #reservationImg{
         flex: 1.4;
@@ -286,16 +292,6 @@
     #reservationAndAboutPart{
         background: #f2f2f2;
         height: 42vw;
-    }
-    .reservationPart{
-        position: absolute;
-       left: 15vw;
-       top: 120vw;
-    }
-    .aboutPart{
-        position: absolute;
-        left: 15vw;
-        top: 146.5vw;
     }
     .ourSpecialities{
         width: 100vw;
@@ -428,17 +424,21 @@
     }
 }
 @media (min-width: 1920px){
+    .header{
+        height: 800px;
+        background-position-y: -1250px;
+    }
     .restaurantNameHeader h1{
-        font-size: 4.5vw;
-        left: 35vw;
+        font-size: 60px;
+        left: 40vw;
     }
     .restaurantNameHeader h3{
-        font-size: 3.5vw;
+        font-size: 40px;
         top: 45%;
-        left: 30vw;
+        left: 38vw;
     }
     .reservationPart{
-        top: 92.1vw;
+        top: 40vw;
     }
     .aboutPart{
        top: 117vw;
