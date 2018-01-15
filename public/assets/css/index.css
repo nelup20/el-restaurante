@@ -209,8 +209,9 @@
         background-image: url("../images/taco1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-y: -1250px
+        background-position-y: -1250px;
     }
+    
     .restaurantNameHeader h1{
         font-family: 'Kaushan Script', cursive;
         font-size: 10vw;

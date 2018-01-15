@@ -166,7 +166,7 @@ h2{
         text-decoration: none;
         font-size: 2vw;
         margin-right: 3vw;
-        
+        text-shadow: -1px -1px black; 
     }
 }
 @media (min-width: 1920px){
