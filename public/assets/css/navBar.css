@@ -82,9 +82,12 @@ h2{
     color: white;
     text-decoration: none;
     font-size: 3vw;
+    border-bottom: solid 2.5px transparent;
+    transition: all 1s;
 }
-#navCurrentLink{
-    text-decoration: underline;
+.navigationLinks a:hover{
+    border-bottom: 2.5px solid white;
+    transition: all 1s;
 }
 @media (min-width: 768px){
     .navigationLinks{
