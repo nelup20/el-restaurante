@@ -8,7 +8,7 @@ window.onload = function(){
     reservePart.style.opacity = 1;
     setTimeout(function(){
         aboutPart.style.opacity = 1;
-    }, 500);
+    }, 700);
 }
 
 function revealReservation(e){

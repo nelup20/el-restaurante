@@ -408,18 +408,27 @@
     }
 }
 @media (min-width: 1440px){
+    .aboutPart h3{
+        font-size: 30px
+    }
+    .reservationPart h3{
+        font-size: 30px
+    }
+    .reservAndAbout{
+        height: 37vw
+    }
     .reservationPart{
         top: 42vw
     }
     .aboutPart{
-        top: 68vw
+        top: 64vw
     }
     #firstTwoSpecialities{
-        top: 143vw;
+        top: 135vw;
         
     }
     #lastTwoSpecialities{
-        top: 155vw;
+        top: 147vw;
     }
 }
 @media (min-width: 1920px){
