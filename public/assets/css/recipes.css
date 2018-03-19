@@ -22,7 +22,9 @@
     background-color: rgb(243, 207, 44);
     color: white; 
     height: 10vw;
+    font-family: 'Roboto', sans-serif;
     cursor: pointer
+    
 }
 .divForm{
     height: 35vh;
@@ -30,6 +32,7 @@
 .divForm form{
     display: flex;
     margin-left: 8%;
+    font-family: 'Roboto', sans-serif;
 }
 .divForm form input{
     border: 0.5px solid rgba(128, 128, 128, 0.562);
@@ -37,7 +40,8 @@
     text-align: center;
     height: 9vw;
     margin-right: 3vw;
-    width: 50vw
+    width: 50vw;
+    
 
 }
 .recipeHeader{
@@ -68,15 +72,10 @@
     }
 }
 @media (min-width: 1280px){
-    #sendBtn{
-        border-radius: 8px;
-        height: 7vw;
-        font-size: 2.5vw;
-    }
     .divForm form input{
         border-radius: 8px;
-        font-size: 2.5vw;
-        height: 7vw
+        font-size: 18px;
+        height: 40px
     
     }
     .divForm form{
@@ -84,5 +83,26 @@
     }
     .recipeHeader{
         font-size: 3vw
+    }
+}
+@media (min-width: 1600px) {
+    .header{
+        height: 130vh
+    }
+    #sendBtn{
+        height: 5vw;
+        font-size: 2vw;
+    }
+    .divForm form input{ 
+        font-size: 15px;
+        height: 5vw
+    
+    }
+    .divForm form{
+        margin-left: 15.5%;
+    }
+    .recipeHeader{
+        font-size: 2vw;
+        margin-top: 10vw
     }
 }
