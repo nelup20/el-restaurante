@@ -1,486 +1,476 @@
+.header {
+  padding-top: 0;
+  width: 105vw;
+  height: 100vh;
+  color: white;
+  background-image: url("../images/taco1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-.header{
+.restaurantNameHeader h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 10vw;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 18vw;
+  text-shadow: 1px 1px 1px black;
+  animation-duration: 1.5s;
+}
+.restaurantNameHeader h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 6vw;
+  top: 55%;
+  left: 16vw;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  animation-duration: 1.5s;
+}
+
+.reservationPart {
+  width: 105vw;
+  display: flex;
+  justify-content: center;
+}
+#reservationImg {
+  flex: 1.1;
+  background-image: url("../images/restaurant1.jpg");
+  background-size: cover;
+}
+.reservationPart div {
+  flex: 1;
+  text-align: center;
+  color: rgba(158, 158, 158, 0.993);
+  font-family: "Roboto", sans-serif;
+  font-size: 3vw;
+}
+.reservationPart h3 {
+  font-family: "Kaushan Script", cursive;
+  color: rgba(0, 0, 0, 0.733);
+}
+.reservationPart button {
+  font-family: "Roboto", sans-serif;
+  font-size: 3vw;
+  color: rgb(197, 169, 41);
+  border: 1px solid rgba(197, 169, 41, 0.3);
+  background-color: white;
+  border-radius: 0%;
+  padding: 3vw;
+  cursor: pointer;
+  margin-bottom: 2vw;
+  transition: all 1s;
+}
+.aboutPart {
+  display: flex;
+}
+.aboutPart div {
+  flex: 1;
+  text-align: center;
+  font-size: 3vw;
+  font-family: "Roboto", sans-serif;
+  color: rgba(158, 158, 158, 0.993);
+}
+.aboutPart h3 {
+  font-family: "Kaushan Script", cursive;
+  color: rgba(0, 0, 0, 0.733);
+}
+#aboutImg {
+  flex: 1;
+  background-image: url("../images/drink1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ourSpecialities {
+  background-image: url("../images/ourSpecialities.jpg");
+  background-size: cover;
+  height: 100vw;
+  width: 105vw;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.ourSpecialities h2 {
+  flex: 1;
+}
+.specialities {
+  width: 105vw;
+}
+.specialityItem {
+  display: flex;
+}
+.specialityItem div {
+  flex: 1;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: rgba(158, 158, 158, 0.993);
+}
+.specialityItem h3 {
+  color: rgba(0, 0, 0, 0.719);
+}
+.specialityItem h4 {
+  color: rgb(197, 169, 41);
+}
+.specialityItem p {
+  font-size: 3.5vw;
+}
+#TacoImg {
+  flex: 1;
+  background-image: url("../images/speciality1.jpg");
+  background-size: cover;
+}
+#BurritoImg {
+  flex: 1;
+  background-image: url("../images/speciality2.jpg");
+  background-size: cover;
+}
+#NachoImg {
+  flex: 1;
+  background-image: url("../images/speciality3.jpg");
+  background-size: cover;
+}
+#RandomFoodImg {
+  flex: 1;
+  background-image: url("../images/speciality4.jpg");
+  background-size: cover;
+}
+.bellowSpecialities {
+  width: 105vw;
+  background-image: url("../images/belowSpecialities.jpg");
+  height: 100vw;
+  background-size: cover;
+}
+.menu {
+  font-family: "Roboto", sans-serif;
+  width: 105vw;
+}
+.menu h3 {
+  margin: 0 auto;
+  font-family: "Kaushan Script", cursive;
+  color: rgba(0, 0, 0, 0.533);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.533);
+  width: 14.5vw;
+}
+.menu h4 {
+  text-align: center;
+  font-size: 3.5vw;
+  color: rgb(197, 169, 41);
+}
+.menuItem {
+  margin-left: 2.5vw;
+}
+.menuItem h5 {
+  margin-bottom: 0;
+}
+.itemDescription {
+  margin-left: 1vw;
+  display: flex;
+}
+.itemDescription p {
+  flex: 2.5;
+  font-size: 3.5vw;
+  color: #868686;
+}
+.itemPrice {
+  flex: 1;
+  font-family: "Kaushan Script", cursive;
+  align-self: center;
+}
+@media (min-width: 768px) {
+  .ourSpecialities h2 {
+    font-size: 7vw;
+  }
+  .specialityItem h4 {
+    font-size: 3vw;
+  }
+  .specialityItem h3 {
+    font-size: 4vw;
+  }
+  .menu h3 {
+    font-size: 6vw;
+  }
+  .menuItem h5 {
+    font-size: 4vw;
+  }
+  .itemPrice {
+    font-size: 5vw;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
     padding-top: 0;
-    width: 105vw;
-    height: 100vh;
+    width: 100vw;
+    height: 650px;
     color: white;
     background-image: url("../images/taco1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
+    background-position-y: -750px;
+  }
 
-.restaurantNameHeader h1{
-    font-family: 'Kaushan Script', cursive;
-    font-size: 10vw;
+  .restaurantNameHeader h1 {
+    font-family: "Kaushan Script", cursive;
+    font-size: 50px;
     margin: 0;
     position: absolute;
-    top: 50%;
-    left: 18vw;
+    top: 35%;
+    left: 40vw;
     text-shadow: 1px 1px 1px black;
-}
-.restaurantNameHeader h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 6vw;
-    top: 55%;
-    left: 16vw;
+  }
+  .restaurantNameHeader h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    top: 42%;
+    left: 36.5vw;
     text-shadow: 1px 1px 1px black;
     position: absolute;
-}
-
-.reservationPart{
-    width: 105vw;
-    display: flex;
-    justify-content: center;
-   
-    
-}
-#reservationImg{
-    flex: 1.1;
-    background-image: url("../images/restaurant1.jpg");
-    background-size: cover;
-
-}
-.reservationPart div{
-    flex: 1;
-    text-align: center;
-    color: rgba(158, 158, 158, 0.993);
-    font-family: 'Roboto', sans-serif;
-    font-size: 3vw;
-}
-.reservationPart h3{
-    font-family: 'Kaushan Script', cursive;
-    color: rgba(0, 0, 0, 0.733);
-}
-.reservationPart button{
-    font-family: 'Roboto', sans-serif;
-    font-size: 3vw;
-    color: rgb(197, 169, 41);
-    border: 1px solid rgba(197, 169, 41, 0.3);
-    background-color: white;
-    border-radius: 0%;
-    padding: 3vw;
-    cursor: pointer;
-    margin-bottom: 2vw;
-    transition: all 1s;
-}
-.aboutPart{
-    display: flex;
-}
-.aboutPart div{
-    flex: 1;
-    text-align: center;
-    font-size: 3vw;
-    font-family: 'Roboto', sans-serif;
-    color: rgba(158, 158, 158, 0.993);
-}
-.aboutPart h3{
-    font-family: 'Kaushan Script', cursive;
-    color: rgba(0, 0, 0, 0.733);
-}
-#aboutImg{
-    flex: 1;
-    background-image: url("../images/drink1.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;   
-}
-.ourSpecialities{
-    background-image: url("../images/ourSpecialities.jpg");
-    background-size: cover;
-    height: 100vw;
-    width: 105vw;
-    color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
-.ourSpecialities h2{
-    flex: 1;    
-}
-.specialities{
-    width: 105vw;
-}
-.specialityItem{
-    display: flex;
-}
-.specialityItem div{
-    flex: 1;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: rgba(158, 158, 158, 0.993);
-}
-.specialityItem h3{
-    color: rgba(0, 0, 0, 0.719);
-}
-.specialityItem h4{
-    color: rgb(197, 169, 41);
-}
-.specialityItem p{
-    font-size: 3.5vw;
-}
-#TacoImg{
-    flex: 1;
-    background-image: url("../images/speciality1.jpg");
-    background-size: cover; 
-}
-#BurritoImg{
-    flex: 1;
-    background-image: url("../images/speciality2.jpg");
-    background-size: cover; 
-}
-#NachoImg{
-    flex: 1;
-    background-image: url("../images/speciality3.jpg");
-    background-size: cover; 
-}
-#RandomFoodImg{
-    flex: 1;
-    background-image: url("../images/speciality4.jpg");
-    background-size: cover; 
-}
-.bellowSpecialities{
-    width: 105vw;
-    background-image: url("../images/belowSpecialities.jpg");
-    height: 100vw;
-    background-size: cover;
-}
-.menu{
-    font-family: 'Roboto', sans-serif; 
-    width: 105vw;
-}
-.menu h3{
+  }
+  .reservationPart {
+    width: 70vw;
     margin: 0 auto;
-    font-family: 'Kaushan Script', cursive;
-    color: rgba(0, 0, 0, 0.533);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.533);
-   width: 14.5vw
-}
-.menu h4{
-    text-align: center;
-    font-size: 3.5vw;
-    color: rgb(197, 169, 41);
-}
-.menuItem{
-    margin-left: 2.5vw;
-}
-.menuItem h5{
-    margin-bottom: 0;
-}
-.itemDescription{
-    margin-left: 1vw;
-    display: flex;
-}
-.itemDescription p{
-    flex: 2.5;
-    font-size: 3.5vw;
-    color: #868686;
-}
-.itemPrice{
+    opacity: 0;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    position: absolute;
+    left: 15vw;
+    top: 48vw;
+  }
+  .aboutPart {
+    width: 70vw;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    position: absolute;
+    left: 15vw;
+    top: 74.5vw;
+  }
+  #reservationImg {
+    flex: 1.4;
+    flex-basis: 1vw;
+  }
+  .reservationPart div {
+    background: white;
     flex: 1;
-    font-family: 'Kaushan Script', cursive;
-    align-self: center
-}
-@media (min-width: 768px){
-    .ourSpecialities h2{
-        font-size: 7vw;   
-    }
-    .specialityItem h4{
-        font-size: 3vw;
-    }
-    .specialityItem h3{
-        font-size: 4vw;
-    }
-    .menu h3{
-        font-size: 6vw;
-    }
-    .menuItem h5{
-        font-size: 4vw;
-    }
-    .itemPrice{
-        font-size: 5vw;
-    }
-}
-@media (min-width: 1280px){
-    
-    
-    .header{
-        padding-top: 0;
-        width: 100vw;
-        height: 650px;
-        color: white;
-        background-image: url("../images/taco1.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-y: -750px;
-    }
-    
-    .restaurantNameHeader h1{
-        font-family: 'Kaushan Script', cursive;
-        font-size: 50px;
-        margin: 0;
-        position: absolute;
-        top: 35%;
-        left: 40vw;
-        text-shadow: 1px 1px 1px black;
-    }
-    .restaurantNameHeader h3{
-        font-family: 'Roboto', sans-serif;
-        font-size: 35px;
-        top: 42%;
-        left: 36.5vw;
-        text-shadow: 1px 1px 1px black;
-        position: absolute;
-    }
-    .reservationPart{
-        width: 70vw;
-        margin: 0 auto;
-        opacity: 0;
-        transition: all 1s;
-        -moz-transition: all 1s;
-        -webkit-transition: all 1s;
-        -o-transition: all 1s;
-        position: absolute;
-       left: 15vw;
-       top: 48vw;
-    }
-    .aboutPart{
-        width: 70vw;
-        margin: 0 auto;
-        opacity: 0;
-        transition: all 1s;
-        -moz-transition: all 1s;
-        -webkit-transition: all 1s;
-        -o-transition: all 1s;
-        position: absolute;
-        left: 15vw;
-        top: 74.5vw;
-    }
-    #reservationImg{
-        flex: 1.4;
-        flex-basis: 1vw;
-    }
-    .reservationPart div{
-        background: white;
-        flex: 1;
-        text-align: center;
-        color: rgba(158, 158, 158, 0.993);
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.4vw;
-        
-    }
-    .reservationPart h3{
-        font-size: 3.5vw;
-    }
-    .reservationPart button{
-        font-weight: bold;
-        font-size: 1.7vw;
-        border: 3.5px solid rgba(197, 169, 41, 0.3);
-        padding: 2vw;
-        margin-bottom: 2vw;
-    }
-    .aboutPart div{
-        background: white;
-        text-align: center;
-        font-size: 1.7vw;
-        font-family: 'Roboto', sans-serif;
-        color: rgba(158, 158, 158, 0.993);
-    }
-    .aboutPart h3{
-        font-size: 3.5vw;
-    }
-    #aboutImg{
-        flex: 0.7
-    }
-    #reservationAndAboutPart{
-        background: #f2f2f2;
-        height: 47vw;
-    }
-    .ourSpecialities{
-        width: 100vw;
-        height: 800px;
-        background-attachment: fixed;
-    
-    }
-    .ourSpecialities h2{
-        font-size: 4vw;
-    }
-    .specialities{
-        width: 100vw;
-        height: 16vw;
-        background-color: #f2f2f2;
-    }
-    .specialities p{
-        font-size: 1vw;
-    }
-    .specialities h3{
-        font-size: 1.5vw;
-    }
-    .specialities h4{
-        font-size: 1vw;
-    }
-    
-    #firstTwoSpecialities{
-        display: flex;
-        position: absolute;
-        left: 20vw;
-        background: white;
-        top: 155vw;
-        opacity: 0;
-        transition: all 1s;
-        -moz-transition: all 1s;
-        -webkit-transition: all 1s;
-        -o-transition: all 1s;
-        
-    }
-    #lastTwoSpecialities{
-        display: flex;
-        position: absolute;
-        top: 167vw;
-        background: white;
-        left: 20vw;
-        width: 60vw;
-        opacity: 0;
-        transition: all 1s;
-        -moz-transition: all 1s;
-        -webkit-transition: all 1s;
-        -o-transition: all 1s;
-    }
-    #prelastSpecialityItem{
-        flex: 0.913;
-    }
-    #lastSpecialityItem{
-        flex: 1;
-    }
-    #NachoImg{
-        flex: 0.99
-    }
-    #RandomFoodImg{
-        flex: 0.99
-    }
-    .bellowSpecialities{
-        width: 100vw;
-        height: 700px;
-        background-attachment: fixed;
-    }
-    .menu{
-        width: 80vw;
-        margin: 0 auto;
-        height: 70vw;
-    }
-    .navBar{
-        width: 95vw;
-    }
-    .menu h3{
-        font-size: 3vw;
-        width: 7.5vw;
-    }
-    .menu h4{
-        font-size: 1.7vw;
-        margin-top: 4vw;
-    }
-    .menuItemPair{
-        display: flex;
-        flex-wrap: wrap
-    }
-    .menuItem{
-        margin-left: 2.5vw;
-        flex: 1;
-    }
-    .menuItem h5{
-        margin-bottom: 0;
-        font-size: 1.4vw;
-    }
-    .itemDescription p{
-        flex: 2.5;
-        font-size: 1.3vw;
-        color: #868686;
-    }
-    .itemPrice{
-        font-size: 2.2vw
-    }
-    
-}
-@media (min-width: 1340px){
-    #firstTwoSpecialities{
-        top: 234vw;
-        
-    }
-    #lastTwoSpecialities{
-        top: 246.1vw;
-    }
-}
-@media (min-width: 1440px){
-    .reservationPart button:hover{
-        background-color: rgb(197, 169, 41);
-        color: white;
-        transition: all 0.6s;
-    }
+    text-align: center;
+    color: rgba(158, 158, 158, 0.993);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4vw;
+  }
+  .reservationPart h3 {
+    font-size: 3.5vw;
+  }
+  .reservationPart button {
+    font-weight: bold;
+    font-size: 1.7vw;
+    border: 3.5px solid rgba(197, 169, 41, 0.3);
+    padding: 2vw;
+    margin-bottom: 2vw;
+  }
+  .aboutPart div {
+    background: white;
+    text-align: center;
+    font-size: 1.7vw;
+    font-family: "Roboto", sans-serif;
+    color: rgba(158, 158, 158, 0.993);
+  }
+  .aboutPart h3 {
+    font-size: 3.5vw;
+  }
+  #aboutImg {
+    flex: 0.7;
+  }
+  #reservationAndAboutPart {
+    background: #f2f2f2;
+    height: 47vw;
+  }
+  .ourSpecialities {
+    width: 100vw;
+    height: 800px;
+    background-attachment: fixed;
+  }
+  .ourSpecialities h2 {
+    font-size: 4vw;
+  }
+  .specialities {
+    width: 100vw;
+    height: 16vw;
+    background-color: #f2f2f2;
+  }
+  .specialities p {
+    font-size: 1vw;
+  }
+  .specialities h3 {
+    font-size: 1.5vw;
+  }
+  .specialities h4 {
+    font-size: 1vw;
+  }
 
-    .aboutPart h3{
-        font-size: 30px
-    }
-    .reservationPart h3{
-        font-size: 30px
-    }
-    .reservAndAbout{
-        height: 37vw
-    }
-    .reservationPart{
-        top: 42vw
-    }
-    .aboutPart{
-        top: 64vw
-    }
-    #firstTwoSpecialities{
-        top: 135vw;
-        
-    }
-    #lastTwoSpecialities{
-        top: 147vw;
-    }
+  #firstTwoSpecialities {
+    display: flex;
+    position: absolute;
+    left: 20vw;
+    background: white;
+    top: 155vw;
+    opacity: 0;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+  }
+  #lastTwoSpecialities {
+    display: flex;
+    position: absolute;
+    top: 167vw;
+    background: white;
+    left: 20vw;
+    width: 60vw;
+    opacity: 0;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+  }
+  #prelastSpecialityItem {
+    flex: 0.913;
+  }
+  #lastSpecialityItem {
+    flex: 1;
+  }
+  #NachoImg {
+    flex: 0.99;
+  }
+  #RandomFoodImg {
+    flex: 0.99;
+  }
+  .bellowSpecialities {
+    width: 100vw;
+    height: 700px;
+    background-attachment: fixed;
+  }
+  .menu {
+    width: 80vw;
+    margin: 0 auto;
+    height: 70vw;
+    opacity: 0;
+  }
+  .navBar {
+    width: 95vw;
+  }
+  .menu h3 {
+    font-size: 3vw;
+    width: 7.5vw;
+  }
+  .menu h4 {
+    font-size: 1.7vw;
+    margin-top: 4vw;
+  }
+  .menuItemPair {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menuItem {
+    margin-left: 2.5vw;
+    flex: 1;
+  }
+  .menuItem h5 {
+    margin-bottom: 0;
+    font-size: 1.4vw;
+  }
+  .itemDescription p {
+    flex: 2.5;
+    font-size: 1.3vw;
+    color: #868686;
+  }
+  .itemPrice {
+    font-size: 2.2vw;
+  }
 }
-@media (min-width: 1920px){
-    .header{
-        height: 800px;
-        background-position-y: -1250px;
-    }
-    .restaurantNameHeader h1{
-        font-size: 60px;
-        left: 40vw;
-    }
-    .restaurantNameHeader h3{
-        font-size: 40px;
-        top: 45%;
-        left: 38vw;
-    }
-    .reservationPart{
-        top: 40vw;
-    }
-    .aboutPart{
-       top: 117vw;
-    }
-    .reservAndAbout{
-        width: 100vw;
-        height: 35vw
-    }
-    .reservationPart div{
-        font-size: 1.3vw
-    }
-    .aboutPart div{
-        font-size: 1.4vw
-    }
-    #firstTwoSpecialities{
-        left: 20vw;
-        top: 230vw;
-        
-    }
-    #lastTwoSpecialities{
-        top: 242.25vw;
-        left: 20vw;
-    }
-    .specialities{
-        height: 18.5vw;
-    }
-    .itemPrice{
-        margin-left: 0.4vw
-    }
+@media (min-width: 1340px) {
+  #firstTwoSpecialities {
+    top: 234vw;
+  }
+  #lastTwoSpecialities {
+    top: 246.1vw;
+  }
+}
+@media (min-width: 1440px) {
+  .reservationPart button:hover {
+    background-color: rgb(197, 169, 41);
+    color: white;
+    transition: all 0.6s;
+  }
+
+  .aboutPart h3 {
+    font-size: 30px;
+  }
+  .reservationPart h3 {
+    font-size: 30px;
+  }
+  .reservAndAbout {
+    height: 37vw;
+  }
+  .reservationPart {
+    top: 42vw;
+  }
+  .aboutPart {
+    top: 64vw;
+  }
+  #firstTwoSpecialities {
+    top: 135vw;
+  }
+  #lastTwoSpecialities {
+    top: 147vw;
+  }
+}
+@media (min-width: 1920px) {
+  .header {
+    height: 800px;
+    background-position-y: -1250px;
+  }
+  .restaurantNameHeader h1 {
+    font-size: 60px;
+    left: 40vw;
+  }
+  .restaurantNameHeader h3 {
+    font-size: 40px;
+    top: 45%;
+    left: 38vw;
+  }
+  .reservationPart {
+    top: 40vw;
+  }
+  .aboutPart {
+    top: 117vw;
+  }
+  .reservAndAbout {
+    width: 100vw;
+    height: 35vw;
+  }
+  .reservationPart div {
+    font-size: 1.3vw;
+  }
+  .aboutPart div {
+    font-size: 1.4vw;
+  }
+  #firstTwoSpecialities {
+    left: 20vw;
+    top: 230vw;
+  }
+  #lastTwoSpecialities {
+    top: 242.25vw;
+    left: 20vw;
+  }
+  .specialities {
+    height: 18.5vw;
+  }
+  .itemPrice {
+    margin-left: 0.4vw;
+  }
 }

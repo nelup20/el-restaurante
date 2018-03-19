@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,55 +8,86 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto" rel="stylesheet">
     <script src="https://use.fontawesome.com/f3341d973d.js"></script>
     <title>El Restaurante</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/css/navBar.css">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+
 </head>
+
 <body>
     <div class="header">
         <div class="navBar">
-    <h1 id="restaurantName">El Restaurante</h1>
-    <img src="./assets/images/logo.png" alt="" id="sombreroIcon">
-    <div class="nav">
-        <span class="hamburgerBackground"><i class="fa fa-bars" aria-hidden="true"></i></span> 
-        <div class="navigationLinks">
-            <ul>
-                <li><a href="/shop">SHOP</a></li>
-                <li><a href="/recipes">RECIPES</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </div>       
+            <h1 id="restaurantName">El Restaurante</h1>
+            <img src="./assets/images/logo.png" alt="" id="sombreroIcon">
+            <div class="nav">
+                <span class="hamburgerBackground">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+                <div class="navigationLinks">
+                    <ul>
+                        <li>
+                            <a href="/shop">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="/recipes">RECIPES</a>
+                        </li>
+                        <li>
+                            <a href="/news">NEWS</a>
+                        </li>
+                        <li>
+                            <a href="/about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="/contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="restaurantNameHeader">
+            <h1 class="animated fadeInUp">El Restaurante</h1>
+            <h3 class="animated fadeInUp">MEXICAN SPECIALITIES</h3>
+        </div>
     </div>
-</div>
-<div class="restaurantNameHeader">
-<h1>El Restaurante</h1>
-<h3>MEXICAN SPECIALITIES</h3>
-</div>
-</div>
     <div class="reservAndAbout">
         <div id="reservationAndAboutPart">
-        <div class="reservationPart">
-            <div>
-                <h3>Reservations</h3>
-                <p>Call us now to book a table in our restaurant. 
-                    Calls must be in the same day as the reservation
-                </p>
-                <button>BOOK A TABLE </button>
+            <div class="reservationPart">
+                <div>
+                    <h3>Reservations</h3>
+                    <p>Call us now to book a table in our restaurant. Calls must be in the same day as the reservation
+                    </p>
+                    <button id="book-table-button">BOOK A TABLE </button>
+                </div>
+                <div id="reservationImg"></div>
             </div>
-            <div id="reservationImg"></div>
-        </div>
-        <div class="aboutPart">
-            <div id="aboutImg"></div>
-            <div>
-                <h3>About</h3>
-                <p>El Restaurante is a 5 michelin star mexican restaurant opened by the great chef
-                    John Doe in the northern city of nowhere. John Doe's love for mexican cuisine is
-                    greatly appreciated by his customers, always leaving satisfied and full.
-                    The success of El Restaurante is incomparable.
-                </p>
+            <div class="aboutPart">
+                <div id="aboutImg"></div>
+                <div>
+                    <h3>About</h3>
+                    <p>El Restaurante is a 5 michelin star mexican restaurant opened by the great chef John Doe in the northern
+                        city of nowhere. John Doe's love for mexican cuisine is greatly appreciated by his customers, always
+                        leaving satisfied and full. The success of El Restaurante is incomparable.
+                    </p>
+                </div>
             </div>
-        </div>
         </div>
     </div>
     <div class="ourSpecialities">
@@ -63,126 +95,125 @@
     </div>
     <div class="specialities">
         <div id="firstTwoSpecialities">
-        <div class="specialityItem">
-            <div>
-            <h3>TACO</h3>
-            <p>Taco made with chicken and the best veggies
-                in the whole world.
-            </p>
-            <h4>FROM $6.99</h4>
+            <div class="specialityItem">
+                <div>
+                    <h3>TACO</h3>
+                    <p>Taco made with chicken and the best veggies in the whole world.
+                    </p>
+                    <h4>FROM $6.99</h4>
+                </div>
+                <div id="TacoImg"></div>
+            </div>
+            <div class="specialityItem">
+                <div>
+                    <h3>BURRITO</h3>
+                    <p>Burrito made with no meat, no cheese, no vegetables and it's boneless.
+                    </p>
+                    <h4>FROM $300</h4>
+                </div>
+                <div id="BurritoImg"></div>
+            </div>
         </div>
-        <div id="TacoImg"></div>
-    </div>
-        <div class="specialityItem">
-            <div>
-            <h3>BURRITO</h3>
-            <p>Burrito made with no meat, no cheese, no vegetables
-                and it's boneless.
-            </p>
-            <h4>FROM $300</h4>
+        <div id="lastTwoSpecialities">
+            <div class="specialityItem" id="prelastSpecialityItem">
+                <div>
+                    <h3>NACHOS</h3>
+                    <p>Nachos made with love and care. Let the taste hit your tastebuds with an unprecedented force.
+                    </p>
+                    <h4>FROM $4.20</h4>
+                </div>
+                <div id="NachoImg"></div>
+            </div>
+            <div class="specialityItem" id="lastSpecialityItem">
+                <div>
+                    <h3>NOBODY KNOWS</h3>
+                    <p>It's got it all: meat, veggies, taste. What is it ? Who knows, but it's damn good!
+                    </p>
+                    <h4>FROM $1.99</h4>
+                </div>
+                <div id="RandomFoodImg"></div>
+            </div>
         </div>
-        <div id="BurritoImg"></div>
-    </div>
-</div>
-<div id="lastTwoSpecialities">
-    <div class="specialityItem" id="prelastSpecialityItem">
-            <div>
-            <h3>NACHOS</h3>
-            <p>Nachos made with love and care. Let the taste hit your
-                tastebuds with an unprecedented force.
-            </p>
-            <h4>FROM $4.20</h4>
-        </div>
-        <div id="NachoImg"></div>
-    </div>
-    <div class="specialityItem" id="lastSpecialityItem">
-            <div>
-            <h3>NOBODY KNOWS</h3>
-            <p>It's got it all: meat, veggies, taste. What is it ?
-                Who knows, but it's damn good!
-            </p>
-            <h4>FROM $1.99</h4>
-        </div>
-        <div id="RandomFoodImg"></div>
-    </div>
-    </div>
     </div>
     <div class="bellowSpecialities"></div>
     <div class="menu">
         <h3>Menu</h3>
         <h4>FOOD & BEVERAGES</h4>
         <div class="menuList">
-                <div class="menuItemPair">
-            <div class="menuItem">
-                <h5>CALIFORNIAN BURRITO</h5>
-                <div class="itemDescription">
-                <p>Burrito made with cheese, guacamole, and other amazing
-                    ingredients. 
-                </p>
-                <div class="itemPrice">$5.00</div>
-            </div>
-            </div>
-            <div class="menuItem">
+            <div class="menuItemPair">
+                <div class="menuItem">
+                    <h5>CALIFORNIAN BURRITO</h5>
+                    <div class="itemDescription">
+                        <p>Burrito made with cheese, guacamole, and other amazing ingredients.
+                        </p>
+                        <div class="itemPrice">$5.00</div>
+                    </div>
+                </div>
+                <div class="menuItem">
                     <h5>SUPER TACO</h5>
                     <div class="itemDescription">
-                    <p>Gonna hit with that Laurem Ipsum next item. This item will give you
-                        super powers like Goku, you'll go super sayian 3 in the toilet.
-                    </p>
-                    <div class="itemPrice">$21.00</div>
+                        <p>Gonna hit with that Laurem Ipsum next item. This item will give you super powers like Goku, you'll
+                            go super sayian 3 in the toilet.
+                        </p>
+                        <div class="itemPrice">$21.00</div>
+                    </div>
                 </div>
-                </div>
-                </div>
-                <div class="menuItemPair">
+            </div>
+            <div class="menuItemPair">
                 <div class="menuItem">
-                        <h5>OLEG'S VODKA</h5>
-                        <div class="itemDescription">
-                        <p>I lied, next item will be Laurem Ipsum. Go search on youtube
-                            "Blyats [Russian Friends]". Enjoy!
+                    <h5>OLEG'S VODKA</h5>
+                    <div class="itemDescription">
+                        <p>I lied, next item will be Laurem Ipsum. Go search on youtube "Blyats [Russian Friends]". Enjoy!
                         </p>
                         <div class="itemPrice">$700.00</div>
                     </div>
+                </div>
+                <div class="menuItem">
+                    <h5>NACHOS</h5>
+                    <div class="itemDescription">
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus
+                            convallis quis ac lectus.
+                        </p>
+                        <div class="itemPrice">$10.70</div>
                     </div>
-                    <div class="menuItem">
-                            <h5>NACHOS</h5>
-                            <div class="itemDescription">
-                            <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-                            </p>
-                            <div class="itemPrice">$10.70</div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="menuItemPair">
-                        <div class="menuItem">
-                                <h5>SOMETHING</h5>
-                                <div class="itemDescription">
-                                <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-                                </p>
-                                <div class="itemPrice">$2.85</div>
-                            </div>
-                            </div>
-                            <div class="menuItem">
-                                    <h5>WATER</h5>
-                                    <div class="itemDescription">
-                                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-                                    </p>
-                                    <div class="itemPrice">$5.99</div>
-                                </div>
-                                </div>
-                                </div>
-                                <div class="menuItemPair">
-                                <div class="menuItem">
-                                        <h5>COKE</h5>
-                                        <div class="itemDescription">
-                                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-                                        </p>
-                                        <div class="itemPrice">$0.99</div>
-                                    </div>
-                                    </div>
-                                    <div class="menuItem"></div>
-                                    </div>
+                </div>
+            </div>
+            <div class="menuItemPair">
+                <div class="menuItem">
+                    <h5>SOMETHING</h5>
+                    <div class="itemDescription">
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus
+                            convallis quis ac lectus.
+                        </p>
+                        <div class="itemPrice">$2.85</div>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <h5>WATER</h5>
+                    <div class="itemDescription">
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus
+                            convallis quis ac lectus.
+                        </p>
+                        <div class="itemPrice">$5.99</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuItemPair">
+                <div class="menuItem">
+                    <h5>COKE</h5>
+                    <div class="itemDescription">
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus
+                            convallis quis ac lectus.
+                        </p>
+                        <div class="itemPrice">$0.99</div>
+                    </div>
+                </div>
+                <div class="menuItem"></div>
+            </div>
         </div>
     </div>
     <script src="./assets/js/navBar.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
+
 </html>
