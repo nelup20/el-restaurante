@@ -24,10 +24,11 @@
 
 .newsArticle{
     margin: 0 auto;
+    background-size: 200px
 }
 .newsArticle a{
-    height: 30vh;
-    width: 40vw;
+    height: 270px;
+    width: 250px;
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -38,10 +39,10 @@
     text-decoration: none;
 }
 .articleTitle{
-    margin-top: 16vh;
+    margin-top: 180px;
     margin-left: 2vw;
     color: rgb(5, 5, 206);
-    font-size: 4vw;
+    font-size: 20px;
 }
 .articleSource{
     margin-top: 1vh;
@@ -50,11 +51,11 @@
 }
 @media (min-width: 768px){
     .articleTitle{
-        margin-top: 18vh;
-        font-size: 3vw;
+        margin-top: 180px;
+        font-size: 20px;
     }
     .articleSource{
-        font-size: 3.5vw
+        font-size: 15px
     }
 }
 @media (min-width: 1280px){
@@ -63,31 +64,14 @@
         left: 37vw;
     }
     .newsArticle a{
-        height: 40vh;
-        width: 25vw;
         border-radius: 8px;
-    }
-    .articleTitle{
-        margin-top: 25vh;
-        font-size: 1.7vw;
-    }
-    .articleSource{
-        font-size: 2vw
-    }
-}
-@media (min-width: 1340px) and (max-width: 1375px){
-    .newsArticle a{
-        height: 50vh;
-    }
-    .articleTitle{
-        margin-top: 30vh;
     }
 }
 @media (min-width: 1920px){
     .header{
         height: 110vh;
     }
-    .newsArticle a{
+    /* .newsArticle a{
         height: 40vh;
         width: 20vw;
         border-radius: 8px;
@@ -102,5 +86,5 @@
     .newsArticle{
         margin-left: 9.5vw;
         margin-right: 0.1vw
-    }
+    } */
 }
