@@ -17,7 +17,7 @@ function reveal(e) {
       firstTwoSpecialities.style.opacity = 1;
       lastTwoSpecialities.style.opacity = 1;
     }
-    if (window.innerHeight < 900 && window.pageYOffset >= 2300) {
+    if (window.innerHeight > 700 && window.pageYOffset >= 2300) {
        menu.style.opacity = "1"
        menu.classList = "menu animated fadeInUp";
       }
