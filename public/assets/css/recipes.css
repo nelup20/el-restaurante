@@ -31,55 +31,52 @@
 }
 .divForm form{
     display: flex;
-    margin-left: 8%;
+    margin-left: 20%;
     font-family: 'Roboto', sans-serif;
+}
+.recipeHeader{
+    font-size: 4.8vw;
 }
 .divForm form input{
     border: 0.5px solid rgba(128, 128, 128, 0.562);
-    border-radius: 4px;
     text-align: center;
-    height: 9vw;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 3vw;
-    width: 50vw;
-    
+    width: 50%;
+    border-radius: 8px;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 7.5px;
 
 }
 .recipeHeader{
-    margin: 25vw auto 0 auto;
+    margin: 5vw auto 0 auto;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: rgba(0, 0, 0, 0.514)
 }
 @media (min-width: 768px){
-    #sendBtn{
-        border-radius: 8px;
-        height: 9.5vw;
-        font-size: 3.5vw;
-    }
     .divForm{
         height: 35vh;
     }
     .divForm form{
-        margin-left: 10.5%;
+        margin-left: 30.5%;
     }
     .divForm form input{
         border-radius: 8px;
-        font-size: 3.5vw
-    
+        font-size: 18px;
+        height: 40px;
+        margin-top: 7.5px;
+
     }
     .recipeHeader{
         font-size: 4vw
     }
 }
 @media (min-width: 1280px){
-    .divForm form input{
-        border-radius: 8px;
-        font-size: 18px;
-        height: 40px
-    
-    }
     .divForm form{
-        margin-left: 12.5%;
+        margin-left: 27.5%;
     }
     .recipeHeader{
         font-size: 3vw

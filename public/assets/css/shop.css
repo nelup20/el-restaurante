@@ -54,7 +54,7 @@
 .itemButtons button{
     font-family: 'Roboto', sans-serif;
     color: white;
-    background-color: #5C9A4F;
+    background-color: #b9e563;
     padding: 1.2vh;
     margin-left: 3vw;
     margin-right: 0.5vw;
@@ -80,7 +80,6 @@
     .itemButtons button{
         font-family: 'Roboto', sans-serif;
         color: white;
-        background-color: #5C9A4F;
         padding: 2.8vw;      
         border: none;
         font-size: 3.2vw;
