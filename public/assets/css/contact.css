@@ -1,0 +1,80 @@
+.header{
+    padding-top: 0;
+    width: 100vw;
+    height: 80vh;
+    color: white;
+    background-image: url("../images/contact1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contactTitleHeader h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 10vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 35vw;
+    text-shadow: 1px 1px 1px black;
+}
+.addressMap{
+    width: 100vw;
+    height: 70vh;
+}
+
+.openingHours{
+    margin: 0 auto;
+}
+.openingHours h3{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    color: #6d6d6d;
+    font-size: 5.9vw
+}
+.openingHours ul{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    color: #6d6d6d;
+    font-size: 5vw;
+}
+.openingHours ul li{
+    display: flex;
+}
+.openingHours ul li span{
+    flex: 1;
+}
+.phoneAndAdress h3{
+    color: #6d6d6d;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5vw;
+    text-align: center;
+    width: 70vw;
+    margin: 0 auto
+}
+.phoneAndAdress h3 span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.5vw
+}
+.phoneAndAdress{
+    padding-bottom: 20vw;
+}
+@media (min-width: 1280px){
+    .header{
+        background-position-x: 0;
+        background-position-y: -100px;
+        height: 90vh;
+    }
+    .openingHours h3{
+        font-size: 3.5vw
+    }
+    .openingHours ul{
+        font-size: 2.6vw;
+    }
+    .phoneAndAdress h3{
+        font-size: 2.7vw;
+    }
+    .phoneAndAdress h3 span{
+        font-size: 2.2vw
+    }
+}
