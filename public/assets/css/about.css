@@ -65,23 +65,26 @@
     font-family: "Roboto", sans-serif;
 }
 .aboutText{
-    font-size: 3.3vw;
+    font-size: 11px;
     font-family: "Roboto", sans-serif;
     margin: 2vw 2vw;
 }
 @media (min-width: 768px){
     .aboutPair div{
-        font-size: 3vw;
+        font-size: 17px;
     }
     .aboutPair span{
-        font-size: 4.5vw;
+        font-size: 22px;
     }
     #about3 div{
-        font-size: 3vw;
+        font-size: 17px;
     }
     #about3 span{
-        font-size: 4.5vw;
+        font-size: 22px;
         
+    }
+    #crew2{
+        background-position-x: 0;
     }
 }
 @media (min-width: 1280px){
@@ -99,16 +102,16 @@
         flex-wrap: wrap;
     }
     .aboutPair div{
-        font-size: 2vw;
+        font-size: 22px;
     }
     .aboutPair span{
-        font-size: 3.5vw;
+        font-size: 29px;
     }
     #about3 div{
-        font-size: 2vw;
+        font-size: 22px;
     }
     #about3 span{
-        font-size: 3.5vw;
+        font-size: 29px;
         
     }
     #crew3{
@@ -149,31 +152,31 @@
 }
 @media (min-width: 1340px) and (max-width: 1375px){
     #about1{
-        flex: 0.815;
+        flex: 1;
     }
     #about2{
-        flex: 0.82;
+        flex: 1;
     }
 }
 @media  (min-width: 1440px) {
     .aboutPair div{
-        font-size: 1.5vw;
+        font-size: 25px;
     }
     .aboutPair span{
-        font-size: 2.5vw;
+        font-size: 33px;
     }
     #about3 div{
-        font-size: 1.5vw;
+        font-size: 25px;
     }
     #about3 span{
-        font-size: 2.5vw;
+        font-size: 33px;
         
     }
     #crew1{
-        flex: 1.2
+        flex: 1
     }
     #crew2{
-        flex: 1.25;
+        flex: 1;
         
     }
     .header{
