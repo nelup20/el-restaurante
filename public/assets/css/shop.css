@@ -150,48 +150,14 @@
 }
 @media (min-width: 1340px) and (max-width: 1375px){
     .shopMenu{
-        height: 340vh
+        height: 100vw
     }
 }
-@media (min-width: 1600px){
-    .header{
-        height: 161.5vh;
-    }
-    .itemImg{
-        width: 20vw;
-        height: 15vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 8%;
+@media(min-width: 1580px){
+    .shopMenu{
+        height: 100vw
     }
     .shopItem{
-        border-radius: 7%;
-        width: 20%;
-        margin-left: 6vw;
-        margin-right: 7vw;
-        height: 18.7vw;
-    }
-    .itemButtons input{
-        font-size: 1.5vw;
-        padding: 0.8vw;
-        margin-left: 1vw;
-    
-    }
-    .itemButtons button{
-        padding: 0.8vw;
-        font-size: 1.5vw;
-        margin-left: 1vw;
-    }
-    .shopMenu{
-        height: 180vh
-    }
-    @-moz-document url-prefix(){
-        .itemButtons form{
-            display: inline;
-        }
-        .itemButtons input{
-            width: 8vw;
-        }
+        height: 19.9vw;
     }
 }

@@ -13,7 +13,7 @@ window.onload = function() {
 
 function reveal(e) {
   var timeout = setTimeout(function() {
-    if (window.innerHeight < 900 && window.pageYOffset >= 1400 || window.innerHeight > 900 && window.pageYOffset >= 3500) {
+    if (window.innerHeight < 900 && window.pageYOffset >= 1400 || window.innerHeight > 900 && window.pageYOffset >= 3500 || window.innerWidth >= 1920 && window.pageYOffset >= 1200) {
       firstTwoSpecialities.style.opacity = 1;
       lastTwoSpecialities.style.opacity = 1;
     }

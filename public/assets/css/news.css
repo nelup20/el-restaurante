@@ -69,22 +69,10 @@
 }
 @media (min-width: 1920px){
     .header{
-        height: 110vh;
+        height: 850px;
     }
-    /* .newsArticle a{
-        height: 40vh;
-        width: 20vw;
-        border-radius: 8px;
+    .newsSection{
+        height: 680px;
     }
-    .articleTitle{
-        margin-top: 25vh;
-        font-size: 1.4vw;
-    }
-    .articleSource{
-        font-size: 1.8vw
-    }
-    .newsArticle{
-        margin-left: 9.5vw;
-        margin-right: 0.1vw
-    } */
+    
 }

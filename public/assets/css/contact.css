@@ -78,3 +78,23 @@
         font-size: 2.2vw
     }
 }
+@media (min-width: 1920px){
+    .header{
+        background-position-y: -170px;
+    }
+    .openingHours h3{
+        font-size: 2vw
+    }
+    .openingHours ul{
+        font-size: 1.5vw;
+    }
+    .phoneAndAdress h3{
+        font-size: 2vw;
+    }
+    .phoneAndAdress h3 span{
+        font-size: 1.5vw
+    }
+    .phoneAndAdress{
+        padding-bottom: 6vw;
+    }
+}

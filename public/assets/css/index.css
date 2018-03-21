@@ -421,19 +421,28 @@
 }
 @media (min-width: 1340px) {
   #firstTwoSpecialities {
-    top: 146vw;
+    top: 136vw;
   }
   #lastTwoSpecialities {
-    top: 157.5vw;
+    top: 148vw;
   }
   .reservationPart {
-    top: 44vw;
+    top: 45vw;
   }
   .aboutPart {
-    top: 71vw;
+    top: 67.5vw;
   }
   .reservAndAbout {
-    height: 42vw;
+    height: 33vw;
+  }
+  .aboutPart p{
+    font-size: 1.4vw;
+  }
+  .reservationPart h3{
+    font-size: 2.2vw;
+  }
+  .aboutPart h3{
+    font-size: 2.2vw;
   }
   
 }
@@ -461,6 +470,25 @@
     top: 147vw;
   }
 }
+@media(min-width: 1580px){
+  .reservationPart {
+    top: 38vw;
+  }
+  .aboutPart {
+    top: 59.5vw;
+  }
+  #firstTwoSpecialities {
+    left: 20vw;
+    top: 117vw;
+  }
+  #lastTwoSpecialities {
+    top: 129.3vw;
+    left: 20vw;
+  }
+  .reservAndAbout {
+    height: 31.5vw;
+  }
+}
 @media (min-width: 1920px) {
   .header {
     height: 800px;
@@ -476,14 +504,14 @@
     left: 38vw;
   }
   .reservationPart {
-    top: 40vw;
+    top: 39vw;
   }
   .aboutPart {
-    top: 117vw;
+    top: 55.2vw;
   }
   .reservAndAbout {
     width: 100vw;
-    height: 35vw;
+    height: 26.5vw;
   }
   .reservationPart div {
     font-size: 1.3vw;
@@ -493,10 +521,10 @@
   }
   #firstTwoSpecialities {
     left: 20vw;
-    top: 230vw;
+    top: 107vw;
   }
   #lastTwoSpecialities {
-    top: 242.25vw;
+    top: 119.2vw;
     left: 20vw;
   }
   .specialities {
@@ -504,5 +532,11 @@
   }
   .itemPrice {
     margin-left: 0.4vw;
+  }
+  .reservationPart button {
+    font-size: 23px;
+    border: 3.5px solid rgba(197, 169, 41, 0.3);
+    padding: 25px;
+    margin-bottom: 2vw;
   }
 }
