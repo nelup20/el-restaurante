@@ -455,7 +455,7 @@
     font-size: 30px;
   }
   .reservAndAbout {
-    height: 37vw;
+    height: 32vw;
   }
   .reservationPart {
     top: 42vw;
@@ -464,10 +464,10 @@
     top: 64vw;
   }
   #firstTwoSpecialities {
-    top: 135vw;
+    top: 128vw;
   }
   #lastTwoSpecialities {
-    top: 147vw;
+    top: 140vw;
   }
 }
 @media(min-width: 1580px){
