@@ -25,7 +25,7 @@ function reveal(e) {
 }
 
 bookBtn.addEventListener("click", function(){
-    swal({
+    Swal.fire({
         title: 'Sorry!',
         text: 'All tables are full, please try another time',
         type: 'error',
