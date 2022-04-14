@@ -1,3 +1,5 @@
+(Dear reader: the code is still awful and doesn't represent my current knowledge/skills/standard, I'll refactor it this coming weekend)
+
 It's been another ~2 years since I've done a major update for these READMEs.
 I figured it would be a fun exercise to refactor all of my 3 "major" personal projects and address some of the issues that I had mentioned before.
 Plus it'd be a little bit of a shame to completely throw these (quite featureless) projects away.
