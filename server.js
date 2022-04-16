@@ -1,68 +1,36 @@
-var express = require("express"),
-    path = require("path"),
-    app = express(),
-    bodyParser = require("body-parser"),
-    nodemailer = require("nodemailer"); 
+const express = require("express"),
+      path = require("path"),
+      app = express(),
+      bodyParser = require("body-parser"),
+      paypal = require("paypal-rest-sdk");
+
+const {paypalConfig} = require("./config");
+
+const indexController = require("./controller/indexController");
+const shopController = require("./controller/shopController");
+const recipesController = require("./controller/recipesController");
+const newsController = require("./controller/newsController");
+const aboutController = require("./controller/aboutController");
+const contactController = require("./controller/contactController");
+
+const PORT = process.env.PORT || 3000;
 
 app.set("view engine", "html");
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'view')));
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get("/", function(req, res){
-    res.sendFile("/index.html");
-});
+paypal.configure(paypalConfig);
 
-app.get("/shop", function(req, res){
-    res.sendFile(path.join(__dirname, 'public/shop.html'));
-});
+app.use("/", indexController);
+app.use("/shop", shopController)
+app.use("/recipes", recipesController)
+app.use("/news", newsController)
+app.use("/about", aboutController)
+app.use("/contact", contactController)
 
-app.get("/recipes", function(req, res){
-    res.sendFile(path.join(__dirname, "public/recipes.html"));
-});
-
-app.post("/recipes", function(req, res){
-    res.redirect("back")
-    var sendEmail = req.body.email;
-    var transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-            user: "nplatonovbusiness@gmail.com",
-            pass: "" // Put password here
-        }
-    });
-    var mailOptions = {
-        from: "nplatonovbusiness@gmail.com",
-        to: sendEmail,
-        subject: "El Restaurante Recipe Book !",
-        html: "<h2>Please enjoy our attached recipe book ! :)</h2>",
-        attachments: [
-            {
-                filename: "ElRestauranteBook.pdf",
-                path: "./attachments/ElRestauranteBook.pdf"
-            }
-        ]
-    };
-    transporter.sendMail(mailOptions, function(error, info){
-        if(error){
-            console.log(error);
-            console.log("Something went wrong");
-        } else {
-            console.log("Message sent: " + info.response);
-            console.log("Everything worked fine!")
-        }
-    });
-
-});
-
-
-
-
-
-app.use(function(req, res){
+app.use((req, res) => {
     res.status(404);
     res.redirect("back");
 });
 
-app.listen(process.env.PORT || 3000, function(){
-    console.log("SERVER STARTED ON PORT 3000")
-});
+app.listen(PORT, () => console.log(`Server started on Port ${PORT}: http://localhost:${PORT}/`));
