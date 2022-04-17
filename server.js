@@ -13,7 +13,7 @@ const newsController = require("./controller/newsController");
 const aboutController = require("./controller/aboutController");
 const contactController = require("./controller/contactController");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 app.set("view engine", "html");
 app.use(express.static(path.join(__dirname, 'view')));

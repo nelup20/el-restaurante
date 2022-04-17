@@ -1,3 +1,5 @@
+
+const NEWS_API_KEY = "";
 const newsSection = document.querySelector(".newsSection");
 
 function createArticle(article) {
@@ -8,15 +10,14 @@ function createArticle(article) {
 
   if (title.length >= 31) article.title = `${title.substr(0, 31)}...`;
 
-  newsArticle.innerHTML =
-    `<a href='${url}' target='_blank'>
-        <div class='articleTitle'>
-            ${title}
-        </div>
-        <div class='articleSource'>
-            ${source.name}
-        </div>
-    </a>`;
+  newsArticle.innerHTML = `<a href='${url}' target='_blank'>
+                              <div class='articleTitle'>
+                                  ${title}
+                              </div>
+                              <div class='articleSource'>
+                                  ${source.name}
+                              </div>
+                           </a>`;
 
   newsArticle.firstElementChild.style.background = `url(${urlToImage})`;
   newsArticle.firstElementChild.style.backgroundSize = "contain";
@@ -24,7 +25,7 @@ function createArticle(article) {
   newsSection.appendChild(newsArticle);
 }
 
-const newsApiUrl = `https://newsapi.org/v2/top-headlines?sources=la-nacion&apiKey=${process.env.NEWS_API_KEY}`;
+const newsApiUrl = `https://newsapi.org/v2/top-headlines?sources=la-nacion&apiKey=${NEWS_API_KEY}`;
 
 fetch(newsApiUrl)
   .then(res => res.json())
