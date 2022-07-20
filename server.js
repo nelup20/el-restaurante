@@ -17,7 +17,6 @@ const contactController = require("./controller/contactController");
 const PORT = process.env.PORT || 8080;
 
 app.use(helmet());
-
 app.set("view engine", "html");
 app.use(express.static(path.join(__dirname, 'view')));
 app.use(bodyParser.urlencoded({extended: true}));
