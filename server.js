@@ -2,7 +2,8 @@ const express = require("express"),
       path = require("path"),
       app = express(),
       bodyParser = require("body-parser"),
-      paypal = require("paypal-rest-sdk");
+      paypal = require("paypal-rest-sdk"),
+      helmet = require("helmet");
 
 const {paypalConfig} = require("./config");
 
@@ -14,6 +15,8 @@ const aboutController = require("./controller/aboutController");
 const contactController = require("./controller/contactController");
 
 const PORT = process.env.PORT || 8080;
+
+app.use(helmet());
 
 app.set("view engine", "html");
 app.use(express.static(path.join(__dirname, 'view')));
