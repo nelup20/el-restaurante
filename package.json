@@ -2,17 +2,27 @@
   "name": "elrestaurante.com",
   "version": "1.0.0",
   "description": "Mockup of a restaurant site for portfolio",
-  "main": "server.js",
+  "main": "src/server.ts",
   "scripts": {
-    "start": "node server.js"
+    "start": "ts-node src/server.ts",
+    "lint": "eslint src/"
   },
-  "author": "Nelu Platonov, platon.nelu@yahoo.com",
-  "license": "ISC",
+  "author": "Nelu Platonov",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "nodemailer": "^6.6.1",
     "paypal-rest-sdk": "^1.8.1",
     "helmet": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.0",
+    "@types/nodemailer": "^6.4.6",
+    "@types/paypal-rest-sdk": "^1.7.6",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0"
   }
 }

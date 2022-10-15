@@ -1,0 +1,11 @@
+name: El-restaurante CICD pipeline
+run-name: Pipeline triggered by ${{ github.actor }}
+on: [push]
+jobs:
+  Build:
+    runs-on: node:18.11.0-bullseye-slim
+    steps:
+      - run: apt-update && apt-install typescript
+      - run: npm i
+      - run: tsc
+      - run: echo "Build complete!"

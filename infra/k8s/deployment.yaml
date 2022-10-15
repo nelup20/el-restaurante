@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: el-restaurante-deployment
+  labels:
+    app: el-restaurante-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: el-restaurante-app
+  template:
+    metadata:
+      labels:
+        app: el-restaurante-app
+    spec:
+      containers:
+        - name: el-restaurante-container
+          image: dev
+          ports:
+            - containerPort: 80
