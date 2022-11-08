@@ -1,5 +1,6 @@
+# TODO: expand
 services:
-  app:
+  el-restaurante:
     build: .
     ports:
       - "8080:8080"
